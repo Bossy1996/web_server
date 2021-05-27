@@ -12,6 +12,7 @@ fn main() {
 
     for stream in listener.incoming() {
         let stream = stream.unwrap();
+        // creates a new Pool with 4 threads
         let pool = ThreadPool::new(4);
 
         pool.execute(|| {
