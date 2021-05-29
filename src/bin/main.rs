@@ -49,9 +49,9 @@ fn handle_connection(mut stream: TcpStream) {
 
     stream.write(response.as_bytes()).unwrap();
 
-    /// The following code is dead code that i should delete in some point
-    /// because it always return the idex.html response in any case even though 
-    /// the else statement should return the 404 error
+    // The following code is dead code that i should delete in some point
+    // because it always return the idex.html response in any case even though 
+    // the else statement should return the 404 error
 
    /*  if buffer.starts_with(get) {
 
